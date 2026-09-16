@@ -17,7 +17,7 @@ var CONFIG = {
   OPENSEA_URL: "",
 
   // Google Apps Script Web App URL (deploy Code.gs, paste the /exec URL here).
-  SHEET_ENDPOINT: "https://script.google.com/macros/s/AKfycbwofrG2RBHEvnbbDfDIvWWVr_kpkJdOJiKYAu3ZPPVE3EN3iR-Q-1oj9WvYRce_ZktgaQ/exec",
+  SHEET_ENDPOINT: "https://script.google.com/macros/s/AKfycbxv4EQ3mlUV5nXSsVXvtRFVZrUYAwH6OiXZcHvLkK9mVZWfAzX5ef4iuknDfdl3RgFCrA/exec",
 
   SUPPLY: "3,333",
   NETWORK: "Arc Mainnet",
