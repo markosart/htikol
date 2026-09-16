@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ARCZIES — 3,333 NFTs on Arc Mainnet</title>
+<meta name="description" content="ARCZIES is a 3,333-piece hand-drawn character NFT collection on Arc Mainnet. Join the whitelist before mint.">
+<meta property="og:title" content="ARCZIES — 3,333 NFTs on Arc Mainnet">
+<meta property="og:description" content="A 3,333-piece hand-drawn character NFT collection on Arc Mainnet. Whitelist open now.">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ARCZIES — 3,333 NFTs on Arc Mainnet">
+<meta name="twitter:description" content="A 3,333-piece hand-drawn character NFT collection on Arc Mainnet. Whitelist open now.">
+<link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-base="">
+
+<div id="intro" aria-hidden="true"><canvas></canvas></div>
+
+<header class="topbar">
+  <span class="brand"><img class="arc-logo" src="assets/images/arc-logo.png" width="400" height="400" alt="" style="width:26px">ARCZIES</span>
+  <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="menu-panel" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+<div class="rainbow-strip" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+
+<div class="menu-panel" id="menu-panel" role="dialog" aria-modal="true" aria-label="Site menu">
+  <div class="menu-card">
+    <header>
+      <span>MENU</span>
+      <button class="menu-close" id="menu-close" type="button">CLOSE</button>
+    </header>
+    <nav class="menu-list">
+      <a class="menu-link" href="whitelist/">WHITELIST <span class="tag">OPEN</span></a>
+      <a class="menu-link" href="gallery/">GALLERY <span class="tag">VIEW</span></a>
+      <a class="menu-link menu-link--locked" id="menu-staking" href="staking/">STAKING <span class="tag">LOCKED</span></a>
+    </nav>
+  </div>
+</div>
+
+<main>
+  <!-- HERO / PROJECT INFO -->
+  <section class="section hero">
+    <div class="wrap">
+      <p class="eyebrow">HAND-DRAWN CHARACTER NFTS</p>
+      <img class="arc-logo arc-logo--hero" src="assets/images/arc-logo.png" width="400" height="400" alt="Arc network logo">
+      <h1 class="h1">ARCZIES</h1>
+      <p class="body-text lede">3,333 hand-drawn characters living on Arc Mainnet. Whitelist is open now — complete four social tasks and submit your wallet before mint.</p>
+
+      <div class="info-grid">
+        <div class="info-cell"><div class="k">Collection</div><div class="v">ARCZIES</div></div>
+        <div class="info-cell"><div class="k">Supply</div><div class="v">3,333 NFTs</div></div>
+        <div class="info-cell"><div class="k">Network</div><div class="v arc-chip"><img class="arc-logo" src="assets/images/arc-logo.png" width="400" height="400" alt="Arc network logo"><span>Arc Mainnet</span></div></div>
+        <div class="info-cell"><div class="k">Category</div><div class="v">NFT Collection</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NFT REVEAL -->
+  <section class="section band band--cyan">
+    <div class="wrap">
+      <div class="reveal-wrap">
+        <p class="eyebrow" style="margin-bottom:0">MEET AN ARCZIE</p>
+        <button class="reveal-stage" id="reveal-stage" type="button" aria-label="Reveal an ARCZIES artwork">
+          <img id="reveal-img" alt="ARCZIES character artwork">
+          <canvas id="reveal-canvas" aria-hidden="true"></canvas>
+        </button>
+        <p class="reveal-hint" id="reveal-hint">TAP TO REVEAL</p>
+        <p class="reveal-count" id="reveal-count"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAIN ACTIONS -->
+  <section class="section section--tight">
+    <div class="wrap">
+      <div class="btn-row">
+        <a class="btn btn--purple" href="whitelist/">JOIN WHITELIST</a>
+        <a class="btn" href="gallery/">GALLERY</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIVE TERMINAL -->
+  <section class="section">
+    <div class="wrap">
+      <div class="terminal">
+        <div class="terminal__bar">
+          <span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span>LIVE WHITELIST ACTIVITY</span>
+        </div>
+        <div class="terminal__body" id="terminal-body">
+          <div id="term-boot"></div>
+          <p class="terminal__count" id="term-count" role="status">0 PEOPLE JOINED</p>
+          <ul class="terminal__feed" id="term-feed"></ul>
+          <span class="caret" aria-hidden="true"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ROADMAP -->
+  <section class="section band band--lime">
+    <div class="wrap">
+      <p class="eyebrow">ROADMAP</p>
+      <h2 class="h2" style="margin-bottom:clamp(24px,4vw,38px)">FIVE PHASES</h2>
+
+      <div class="roadmap-grid">
+        <article class="phase">
+          <div class="phase__blocks" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+          <p class="phase__no">PHASE 01</p>
+          <h3 class="phase__title">WHITELIST</h3>
+          <p class="phase__text">Community onboarding and whitelist access.</p>
+        </article>
+        <article class="phase">
+          <div class="phase__blocks" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+          <p class="phase__no">PHASE 02</p>
+          <h3 class="phase__title">MINT</h3>
+          <p class="phase__text">Launch the ARCZIES NFT mint. The date is announced on X.</p>
+        </article>
+        <article class="phase">
+          <div class="phase__blocks" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+          <p class="phase__no">PHASE 03</p>
+          <h3 class="phase__title">COMMUNITY</h3>
+          <p class="phase__text">Grow the ARCZIES community and ecosystem.</p>
+        </article>
+        <article class="phase">
+          <div class="phase__blocks" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+          <p class="phase__no">PHASE 04</p>
+          <h3 class="phase__title">STAKING</h3>
+          <p class="phase__text">NFT staking becomes available after mint.</p>
+        </article>
+        <article class="phase">
+          <div class="phase__blocks" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+          <p class="phase__no">PHASE 05</p>
+          <h3 class="phase__title">REWARDS</h3>
+          <p class="phase__text">Stakers can receive ARCZIES reward tokens and ETH according to the planned reward system.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__links">
+      <a class="btn btn--ghost" data-link="x-profile" href="https://x.com/ARCZIES" target="_blank" rel="noopener">X — @ARCZIES</a>
+      <a class="btn btn--ghost" data-link="opensea" href="#" role="button" aria-disabled="true">OPENSEA — SOON</a>
+    </div>
+    <p class="footer__note">Mint date is announced on X. Follow @ARCZIES and turn on notifications.</p>
+  </div>
+</footer>
+
+<div id="toast-layer" aria-live="polite"></div>
+<script src="js/main.js"></script>
+</body>
+</html>
