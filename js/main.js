@@ -11,7 +11,7 @@ var CONFIG = {
   X_PROFILE: "https://x.com/ARCZIESNFT",
 
   // Pinned post URL. Placeholder for now — replace with the real pinned post.
-  X_PINNED_POST: "https://x.com/ARCZIESNFT",
+  X_PINNED_POST: "https://x.com/ARCZIESNFT/status/2100149995248710018",
 
   // OpenSea collection URL. Leave empty until the collection goes live.
   OPENSEA_URL: "",
