@@ -8,10 +8,10 @@
 
 var CONFIG = {
   // Official X profile
-  X_PROFILE: "https://x.com/ARCZIES",
+  X_PROFILE: "https://x.com/ARCZIESNFT",
 
   // Pinned post URL. Placeholder for now — replace with the real pinned post.
-  X_PINNED_POST: "https://x.com/ARCZIES",
+  X_PINNED_POST: "https://x.com/ARCZIESNFT",
 
   // OpenSea collection URL. Leave empty until the collection goes live.
   OPENSEA_URL: "",
@@ -21,7 +21,7 @@ var CONFIG = {
 
   SUPPLY: "3,333",
   NETWORK: "Arc Mainnet",
-  HANDLE: "@ARCZIES"
+  HANDLE: "@ARCZIESNFT"
 };
 
 /* --------------------------------------------------------------------------
